@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="judul">MyApp</string>
+    <string name="tLogin">L o g i n</string>
+    <string name="tEmail">Email</string>
+    <string name="tPassword">Password</string>
+    <string name="bSignin">Sign-In</string>
+</resources>
