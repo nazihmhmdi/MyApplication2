@@ -5,4 +5,8 @@
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bSignin">Sign-In</string>
+    <string name="tData">A C C O U N T S</string>
+    <string name="txemail">email</string>
+    <string name="txpassword">password</string>
+    <string name="label2">Login Success</string>
 </resources>
