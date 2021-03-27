@@ -8,5 +8,14 @@
     <string name="tData">A C C O U N T S</string>
     <string name="txemail">email</string>
     <string name="txpassword">password</string>
+    <string name="txname">name</string>
     <string name="label2">Login Success</string>
+    <string name="mDaftar">Sign-Up</string>
+    <string name="ldaftar">Registration</string>
+    <string name="enama"> Name </string>
+    <string name="eemail"> Email </string>
+    <string name="epass"> Password</string>
+    <string name="erepass"> Re-Password </string>
+    <string name="ealamat"> Adress </string>
+
 </resources>
