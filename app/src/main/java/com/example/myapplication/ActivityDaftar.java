@@ -17,7 +17,7 @@ public class ActivityDaftar extends AppCompatActivity {
 
     FloatingActionButton fab;
 
-
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class ActivityDaftar extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                name = edtNama.getText().toString();
+                name = edtNama.getText().toString();
 
                 if (edtNama.getText().toString().isEmpty() ||
                     edtAlamat.getText().toString().isEmpty() ||
@@ -45,12 +45,12 @@ public class ActivityDaftar extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Registered Successfully!",
                                 Toast.LENGTH_LONG).show();
 
-//                        Bundle b = new Bundle();
-//
-//                        b.putString("c", name.trim());
+                        Bundle b = new Bundle();
+
+                        b.putString("c", name.trim());
 
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
-//                        i.putExtras(b);
+                        i.putExtras(b);
                         startActivity(i);
                     }
                     else
