@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".ActivityDaftar"
+        <activity android:name=".ActivityLihatData"></activity>
+        <activity android:name=".Home_Activity" />
+        <activity
+            android:name=".ActivityDaftar"
             android:label="@string/mDaftar"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".ActivityHasil"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityHasil"
             android:label="@string/label2"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">

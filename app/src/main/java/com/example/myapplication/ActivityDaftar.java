@@ -24,6 +24,13 @@ public class ActivityDaftar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
 
+        edtNama = findViewById(R.id.edNama);
+        edtAlamat = findViewById(R.id.edAlamat);
+        edtEmail = findViewById(R.id.edEmail);
+        edtPassword = findViewById(R.id.edPass);
+        edtRepass = findViewById(R.id.edRepass);
+        fab = findViewById(R.id.fabSimpan);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

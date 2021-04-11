@@ -81,13 +81,8 @@ public class MainActivity extends AppCompatActivity {
                         t.show();
 
                     }
-
                 }
-
             }
         });
-
     }
-
-
 }
