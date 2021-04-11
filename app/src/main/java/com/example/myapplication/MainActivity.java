@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("a", email.trim());
                         b.putString("b", pass.trim());
 
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
                         i.putExtras(b);
                         startActivity(i);
 

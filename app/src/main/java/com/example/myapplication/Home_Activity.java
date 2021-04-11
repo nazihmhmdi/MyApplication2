@@ -21,7 +21,7 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
 
     String[] listNama;
 
-    public static ArrayList<ClassNama> classNamaArrayList = ArrayList<ClassNama>();
+    public static ArrayList<ClassNama> classNamaArrayList = new ArrayList<ClassNama>();
 
     Bundle bundle = new Bundle();
 
