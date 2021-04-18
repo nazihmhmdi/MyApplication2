@@ -10,14 +10,15 @@
     <string name="txpassword">password</string>
     <string name="txname">name</string>
     <string name="label2">Profile</string>
-    <string name="mDaftar">Sign-Up</string>
+    <string name="tDaftar">Sign-Up</string>
     <string name="ldaftar">Registration</string>
     <string name="enama"> Name </string>
     <string name="eemail"> Email </string>
     <string name="epass"> Password</string>
     <string name="erepass"> Re-Password </string>
     <string name="ealamat"> Address </string>
-    <string name="lihatdata">Dat</string>
+    <string name="lihatdata">Details</string>
+    <string name="lihatnomor">Number</string>
     <string name="editdata">Edit Data</string>
     <string name="datakontak">Contact</string>
     <string name="namaitem">Item</string>

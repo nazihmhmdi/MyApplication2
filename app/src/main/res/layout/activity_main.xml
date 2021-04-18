@@ -23,51 +23,6 @@
         app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@drawable/user" />
 
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="209dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:autofillHints=""
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/tEmail"
-        android:inputType="textPersonName"
-        android:textColor="#65000000"
-        android:textColorHighlight="#FF7171"
-        android:textColorHint="#A5A5A5"
-        android:textColorLink="#F5C0C0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.503" />
-
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:ems="10"
-        android:hint="@string/tPassword"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:textColorHighlight="#FF7171"
-        android:textColorLink="#FF7171"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail"
-        app:layout_constraintVertical_bias="0.154" />
-
     <Button
         android:id="@+id/buttonSignin"
         android:layout_width="wrap_content"
@@ -82,10 +37,81 @@
         app:backgroundTint="#F0E4D7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPassword"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#FF7171"
+        app:hintTextColor="#FF7171"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.434">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/tEmail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="#65000000"
+            android:textColorHighlight="#FF7171"
+            android:textColorLink="#F5C0C0"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#FF7171"
+        app:hintTextColor="#FF7171"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
+        app:layout_constraintVertical_bias="0.171"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/tPassword"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorHighlight="#FF7171"
+            android:textColorLink="#F5C0C0"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/tDaftar"
+        android:textColor="#FF7171"
+        android:textColorLink="#FF7171"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignin"
+        app:layout_constraintVertical_bias="0.367" />
 
     <TextView
         android:id="@+id/textView"
@@ -101,5 +127,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

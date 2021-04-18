@@ -3,5 +3,5 @@
 
     <item
         android:id="@+id/mnDaftar"
-        android:title="@string/mDaftar" />
+        android:title="@string/tDaftar" />
 </menu>

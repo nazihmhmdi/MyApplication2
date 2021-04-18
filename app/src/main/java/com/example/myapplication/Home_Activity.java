@@ -1,4 +1,4 @@
-package com.example.myapplication;
+    package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,7 +32,7 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
 
-        listNama = new String[]{"inayah","Ilham", "Eris",
+        listNama = new String[]{"Inayah","Ilham", "Eris",
                 "Fikri","Maul","Intan","Vina","Gita",
                 "Vian","Lutfi"};
         list = findViewById(R.id.listKontak);
@@ -72,13 +72,13 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
     public boolean onMenuItemClick(MenuItem menuItem) {
         switch (menuItem.getItemId())
         {
-            case R.id.mnview:
+            case R.id.mndata:
                 intent = new Intent(getApplicationContext(),ActivityLihatData.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
-            case R.id.mnedit:
-                Toast.makeText(getApplicationContext(),"Edit Kontak",
+            case R.id.mnnomor:
+                Toast.makeText(getApplicationContext(),"",
                         Toast.LENGTH_LONG).show();
                 break;
         }
